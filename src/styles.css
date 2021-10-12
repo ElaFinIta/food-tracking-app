@@ -1,0 +1,173 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --main-bg-color:  rgb(233, 220, 200);
+  --lighter-bg-color: rgb(244, 240, 236);
+  --brownish-orange: rgb(201, 128, 17);
+  --brownish-orange-darker: rgb(162, 104, 18);
+  --shadow-grey: rgb(120, 119, 119);
+}
+
+
+body {
+  font-family: 'Arimo', sans-serif;
+}
+
+h2, 
+#food-name-area,
+#carbs-prots-fats-area,
+#totalCalBox,
+#food-boxes-list {
+  margin: 1.2rem;
+}
+
+/*************** header area  ************/
+header {
+  padding: 0.8rem;
+  background-color: --lighter-bg-color;
+  font-family: 'Calligraffitti', cursive;
+}
+
+h1 {
+  color: var(--brownish-orange)
+}
+
+/************ add food area **************/
+.food-stats-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+
+main {
+  background-color: var(--main-bg-color);
+  padding: 0.5rem;
+}
+
+h2 {
+  font-size: 1.2rem;
+}
+
+select {
+  padding: 0.4rem;
+  border-radius: 4px;
+  margin-top: 0.5rem;
+  width: 15rem;
+}
+
+.form-labels {
+  font-size: 0.9rem;
+}
+
+#food-name-area,
+#carbs-prots-fats-area {
+  display: flex;
+  flex-direction: column;
+  
+}
+
+.nutrient-wrapper {
+  width: 14rem;
+  display: flex;
+  justify-content: flex-end;
+  margin: 0.3rem;
+  align-items: center;
+}
+
+input {
+  width: 4rem;
+  margin-left: 0.7rem;
+  padding: 0.4rem;
+  border: none;
+  border-radius: 2px;
+  text-align: right;
+}
+
+input[type="submit"] {
+  background-color: var(--brownish-orange);
+  color: white;
+  text-align: center;
+}
+
+input[type="submit"]:hover {
+  background-color: var(--brownish-orange-darker);
+}
+
+/***********  Stats area *********/
+.chart-container {
+  width: 15rem;
+  margin-left: 5rem;
+}
+
+
+/*********** log area *********/
+#log {
+  display: block;
+  justify-content: center;
+}
+
+#totalCalBox {
+  width: 90%;
+  background-color: var(--lighter-bg-color);
+  border-radius: 3px;
+  border: 1px solid var(--brownish-orange);
+  font-size: 0.7rem;
+  padding: 0.5rem;
+  text-align: center;
+}
+
+.foodBox {
+  width: 9rem;
+  margin: 0.4rem;
+  background-color: var(--lighter-bg-color);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-radius: 4px;
+  box-shadow: 2px 1px 3px var(--shadow-grey);
+}
+
+h3 {
+  font-size: 0.8rem;
+  padding-top: 1rem;
+  
+}
+
+#food-boxes-list{
+  display: flex;
+  flex-wrap: wrap;
+}
+
+#food-boxes-list p {
+  font-style: italic;
+  padding-top: 0.2rem;
+}
+
+.list-in-box {
+  display: flex;
+  justify-content: space-around;
+  padding: 1rem;
+  /* list-style-type: disc; */
+}
+
+.list-in-box li {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  padding: 0px 15px 0px 0px;
+}
+
+.foodBox p,
+.list-in-box {
+  font-size: 0.45rem;
+}
+
+#totalCalBox p,
+#caloriesNumber {
+  display: inline-block;
+}

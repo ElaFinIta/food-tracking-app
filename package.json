@@ -1,0 +1,24 @@
+{
+  "name": "food-tracking-app",
+  "version": "1.0.0",
+  "description": "a project for Javascript: an app to keep track of your food log",
+  "main": "index.js",
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "scripts": {
+    "clean": "rm dist/bundle.js",
+    "start": "parcel src/index.html",
+    "build-prod": "parcel build src/index.html"
+  },
+  "dependencies": {
+    "chart.js": "^3.5.1",
+    "s": "^1.0.0",
+    "sna": "0.0.0-beta",
+    "snackbar": "^1.1.0"
+  },
+  "devDependencies": {
+    "parcel-bundler": "^1.12.5",
+    "prettier": "^2.4.1"
+  }
+}

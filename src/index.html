@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Arimo:ital@0;1&family=Calligraffitti&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <script src="index.js" type="module" crossorigin="anonymous"></script>
+    <script></script>
+    <title>Foor tracking app - keep track of your calories</title>
+</head>
+<body>
+    <header>
+        <h1>My Nutrition</h1>
+    </header>
+
+    <main>
+        <div class="food-stats-wrapper">
+            <section id="add-food">
+                <h2>Add food</h2>
+
+                <form action="" id="add-food-form">
+                    <div id="food-name-area">
+                        <label for="food-select" class="form-labels">Food name:</label>
+
+                        <select name="foods" id="food-select">
+                            <option value="" disabled selected>Please select</option>
+                            <option value="Baba ghanoush">Baba ghanoush</option>
+                            <option value=">Nutella bread">Nutella bread</option>
+                            <option value="Stuffed vine leaves">Stuffed vine leaves</option>
+                            <option value="Salmon nigiri">Salmon nigiri</option>
+                            <option value="Avocado bread with mayo">Avocado bread</option>
+                            <option value="Lemon pasta">Lemon pasta</option>
+                        </select>
+                    </div>
+
+                    <div id="carbs-prots-fats-area">
+                        <div class="nutrient-wrapper">
+                            <label for="carbs" class="form-labels">Carbs:</label>
+                            <input type="number" placeholder="0g" id="carbs" name="carbs" min="0" max="9999">
+                        </div>
+
+                        <div class="nutrient-wrapper">
+                            <label for="prots" class="form-labels">Protein:</label>
+                            <input type="number" placeholder="0g" id="prots" name="prots"min="0" max="9999">
+                        </div>
+
+                        <div class="nutrient-wrapper">
+                            <label for="fats" class="form-labels">Fat:</label>
+                            <input type="number" placeholder="0g" id="fats" name="fats" min="0" max="9999">
+                        </div>
+
+                        <div class="nutrient-wrapper">
+                            <input type="submit" value="Add">
+                        </div>
+
+                    </div>
+
+                </form>
+            </section>
+
+
+            <section id="stats">
+                <h2>Added food stats</h2>
+                    <div class="chart-container">
+                        <canvas id="foodChart" aria-label="chart of nutrients" role="img">
+                        <!-- fallback for canvas -->
+                        <p>Your browser does not support the canvas element.</p>
+                    </div>
+                </canvas>
+            </section>
+        </div>
+
+
+        <section id="log">
+            <h2>Log</h2>
+            <div id="totalCalBox">
+                <p>Total calories logged: </p> 
+                <p id="caloriesNumber"></p>
+            </div>
+            
+            <ul id="food-boxes-list">
+                <!-- Example food box:
+                <li class="foodBox">
+                    <h3>Pasta</h3>
+                    <p>408 calories</p>
+                        <ul class="list-in-box">
+                            <li>Carbs: 10g</li>
+                            <li>Protein: 20g</li>
+                            <li>Fat: 23g</li>
+                        </ul> -->
+                <!-- </li> -->
+            </ul>
+        </section>
+    </main>
+</body>
+</html>
